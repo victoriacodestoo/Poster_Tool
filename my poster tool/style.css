@@ -1,0 +1,100 @@
+body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  background: #aaaaaa;
+  grid-template-columns: 300px 1fr;
+}
+
+#ui {
+  background: #f1f1f1;
+  height: 100vh;
+  padding: 15px;
+}
+
+#artboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ui-component {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 100%;
+} 
+
+input[type=number] {
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+}
+
+input[type=text] {
+  border: none;
+  box-shadow: 0;
+  outline: 0;
+}
+
+input[type=range] {
+  border: 0;
+  box-shadow: none;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  background: red;
+  height: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background: black;
+  border: 0;
+  box-shadow: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border: 0;
+  width: 10px;
+  height: 10px;
+  box-shadow: none;
+  background: black;
+  border-radius: 100%;
+}
+
+details {
+  padding: 10px;
+ background-color: rgb(255, 255, 255);
+ margin-bottom: 10px;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+.p-top-10 {
+  padding-top: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 130px;
+}

@@ -1,0 +1,50 @@
+<head></head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id="ui">
+        <details>
+            <summary>Typography</summary>
+            <div class="ui-component p-top-10">
+                <label>Headline</label>
+                <textarea id="headline" type="text">HEADLINE</textarea>
+            </div>
+            <div class="ui-component">
+                <label>Font Size</label>
+                <input id="fontsize" min="10" max="300" value="90" type="range">
+            </div>
+            <div class="ui-component">
+                <label>Color</label>
+               <select id="colorSelector">
+                <option value="#ffffff">White</option>
+                <option value="#000000" selected>Black</option>
+               </select>
+            </div>
+        </details>
+        <details>
+            <summary>Background</summary>
+            <div class="ui-component p-top-10">
+                <label>Color</label>
+                <input type="color" id="colorpicker" value="#f2f2f2">
+            </div>
+        </details>
+         <details>
+            <summary>Image</summary>
+            <div class="ui-component p-top-10">
+                <label>Upload Image</label>
+                <input id="imageUpload" type="file">
+            </div>
+        </details>
+    </div>
+
+    <div id="artboard">
+        <div id="canvasWrapper"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+
+    <script src="./sketch.js"></script>
+
+</body>
